@@ -1,0 +1,26 @@
+/*-------------PARTNERS-----------*/
+
+.partners {
+  background-color: #f6f6f6; 
+}
+
+.headline-partners {
+	color: #4b4b4b;
+	font-size: 6.4em;
+	font-weight: bold;
+	margin: 0 1% 6% 0;
+	&:after {
+	content: '';
+	display: block;
+	background: $color-under;
+	height: 5px;
+	max-width: 45px;
+	width: 100%;
+	margin: 10px 0
+    }
+}
+
+.space {
+	margin-top: 3%;
+}
+

@@ -1,0 +1,88 @@
+/*-------------HEADER-----------*/
+
+.navbar {
+	height: 80px;
+	width: 100%;
+	background-color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.navbar-header {
+	margin-top: -5px;
+}
+
+
+.navbar h1 a {
+	display: inline-block;
+	height: 48px;
+	margin: 1px 0 0 0; 
+	min-width: 224px;
+	background: url("../assets/img/main-logo.png");
+}
+
+
+.navbar-right{
+	padding-top: 15px;
+}
+
+ .navbar-default .navbar-nav li  {
+ 	font-size: 1.6em;
+ 	font-weight: bold;
+ 	padding: 9px 0 0  0;
+ 	margin: 0 50px 2px 0;
+	 &:hover {
+	 	border-bottom: 5px solid #0bc7bc;
+	}
+}
+ 
+ .navbar-default .navbar-nav li a {
+ 	font-size: 1.1em;
+ }
+
+@media only screen and (max-width: 62.5rem) { 
+	.navbar-default .navbar-nav li {
+ 		margin-right: 10px;
+ 		.navbar-default .navbar-toggle {
+ 			background-color: none;
+ 		}
+ 		&:hover {
+ 			background-color: none;
+ 		}
+    }
+}
+
+
+@media only screen and (max-width: 47.937rem) { 
+	.navbar-default .navbar-toggle {
+		border-color: $color-white;
+		&.navbar-toggle:hover {
+			background-color: $color-white;
+		}
+	}
+	.navbar-right {
+		height: 800px;
+			background-color: $color-bg;
+			opacity: .8;
+			margin: 4px 0;
+ 	}
+ 	.navbar-default .navbar-nav > li > a,  {
+ 		font-size: 2rem;
+ 		border-bottom: none;
+ 		color: $color-white;
+ 		z-index: 200;
+		&.navbar-default .navbar-nav > li:after {
+		content: '';
+		display: block;
+		background: $color-under;
+		height: 5px;
+		max-width: 45px;
+		width: 100%;
+		}
+ 	}
+}

@@ -1,0 +1,94 @@
+/*-------------ABOUT-----------*/
+
+.social-icons {
+	margin-top: 8%;
+	margin-bottom: 10px;
+	font-size: 1.6em;
+	.fa {
+		color: $color-white;
+		margin-right: 10px;
+	}
+
+	&.social-icons:after {
+	content: '';
+	display: block;
+	background: $color-under;
+	height: 5px;
+	max-width: 45px;
+	width: 100%;
+	margin: 15px 0 40px 0;
+	}
+}
+
+
+.view-video {
+	cursor: pointer;
+	img {
+		width: 100%;
+		height: auto;
+	}
+	.play-button {
+		position: absolute;
+		color: $color-white;
+		text-align: center;
+		font-size: 2em;
+		top: 50%;
+		width: 100%
+	}
+	.view-video-info {
+		position: absolute;
+		font-size: 2em;
+		font-weight: bold;
+		color: $color-white;
+		width: 100%;
+		text-align: center;
+		bottom: 3%;
+	}
+}
+
+.video-overlay {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.7);
+	z-index: 1000;
+}
+.close-video {
+	width: 100%;
+	height: 1.6em;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.video-small {
+	background-color: #e1e1e1;
+	width: 863px;
+	height: auto;
+	padding: 5px;
+	text-align: center;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-o-border-radius: 4px;
+	margin: auto;
+	position: absolute;
+	top: 50%;
+	margin-top: -240px;
+	left: 50%;
+	margin-left: -432px;
+	.close-small {
+		position: absolute;
+		top: -28px;
+		color: #e1e1e1;
+		font-family: "Titilium Web", sans-serif;
+		right: 0;
+		cursor: pointer;
+	}
+}
+
+
+.text-column {
+	max-width: 90%;
+	font-size: 1.6em; 
+}

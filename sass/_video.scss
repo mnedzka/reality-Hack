@@ -1,0 +1,41 @@
+/*-------------VIDEO-----------*/
+
+.video{
+	width: 100%;
+	left: 0;
+}
+
+.logos {
+  position: absolute;
+  right: 7%;
+  bottom: 5%;
+  z-index: 1000;
+  &.logos img {
+    margin: 20px;
+  }
+}
+
+
+.video h1.main-headline {
+  z-index: 100;
+  font-size: 6rem;
+  letter-spacing: .3rem;
+  font-weight: bold;
+  color: $color-white;
+  position: absolute;
+  left: 9%;
+  top: 40%;
+
+  &.main-headline:after {
+  content: '';
+  display: block;
+  background: $color-white;
+  height: 10px;
+  max-width: 68px;
+  width: 100%;
+  margin: 16px 0 0 0;
+  }
+}
+
+
+
